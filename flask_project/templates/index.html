@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insurance Quote</title>
+</head>
+<body>
+    <h1>Get Your Insurance Quote</h1>
+    
+    <form action="/get-quote" method="POST">
+        <label>Full Name:</label>
+        <input type="text" name="full_name" required><br>
+        
+        <label>Email:</label>
+        <input type="email" name="email" required><br>
+        
+        <label>Phone:</label>
+        <input type="tel" name="phone"><br> 
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" required><br>
+        
+        <label>Insurance Type:</label>
+        <select name="insurance_type" required>
+            <option value="auto">Auto</option>
+            <option value="home">Home</option>
+            <option value="life">Life</option>
+        </select><br>
+        
+        <button type="submit">Get Quote</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Quote</title>
+</head>
+<body>
+    <h1>Your Insurance Quote</h1>
+    
+    <h2>User Details:</h2>
+    <p>Name: {{ user.full_name }}</p>
+    <p>Email: {{ user.email }}</p>
+    <p>Phone: {{ user.phone }}</p>
+    
+    <h2>Quote Details:</h2>
+    <p>Insurance Type: {{ user.insurance_type }}</p>
+    <p>Premium: {{ quote.premium }} {{ quote.currency }}</p>
+    <p>Valid Until: {{ quote.valid_until }}</p>
+    <p>Details: {{ quote.details }}</p>
+    
+    <form action="/initiate-payment" method="POST">
+        <button type="submit">Proceed to Payment</button>
+    </form>
+</body>
+</html>
