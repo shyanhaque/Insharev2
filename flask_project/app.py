@@ -8,7 +8,7 @@ from logging.handlers import RotatingFileHandler
 load_dotenv()
 
 app = Flask(__name__)
-app.secret_key = os.getenv('SECRET_KEY', 'cR8vY5_fG3q2XwTbN7zUkAe6QhSdL1iJ9oPm4WlEp0O')
+app.secret_key = os.getenv('SECRET_KEY', "secret key")
 
 # Configure logging
 logger = logging.getLogger(__name__)
